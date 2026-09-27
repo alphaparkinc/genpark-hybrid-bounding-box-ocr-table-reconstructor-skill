@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genpark-table-reconstructor"
+version = "1.0.0"
+description = "2D bounding box spatial clustering and table reconstruction engine for OCR documents."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "GenPark AI Engineering", email = "engineering@genpark.ai" }
+]
+keywords = ["ai-agent", "mcp", "model-context-protocol", "zero-dependency", "python"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://genpark.ai/mcp"
+"Repository" = "https://github.com/Alpha-Park/genpark-hybrid-bounding-box-ocr-table-reconstructor-skill"
+"Documentation" = "https://github.com/Alpha-Park/genpark-hybrid-bounding-box-ocr-table-reconstructor-skill#readme"
+"Bug Tracker" = "https://github.com/Alpha-Park/genpark-hybrid-bounding-box-ocr-table-reconstructor-skill/issues"
+
+[project.scripts]
+genpark-table-reconstructor = "client:main"
