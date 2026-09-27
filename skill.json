@@ -1,0 +1,33 @@
+{
+  "name": "genpark-hybrid-bounding-box-ocr-table-reconstructor-skill",
+  "version": "1.0.0",
+  "description": "Deterministic 2D bounding-box spatial clustering and table reconstruction engine recovering multi-column layouts, merged headers, and grid hierarchies.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "document-ai",
+    "table-reconstruction",
+    "bounding-box",
+    "ocr-grid",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "reconstruct_table_grid",
+      "description": "Group raw bounding boxes into 2D rows and columns using spatial intersection."
+    },
+    {
+      "name": "detect_merged_headers",
+      "description": "Identify header cells spanning multiple column intervals."
+    },
+    {
+      "name": "format_to_markdown",
+      "description": "Render reconstructed grid into clean GitHub Flavored Markdown."
+    },
+    {
+      "name": "run_benchmark_table_reconstruction",
+      "description": "Execute deterministic multi-column table reconstruction benchmark."
+    }
+  ]
+}
